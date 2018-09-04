@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
 import {
   NativeModules,
   Platform,
@@ -6,7 +6,7 @@ import {
   requireNativeComponent,
   View,
 } from 'react-native';
-
+import PropTypes from 'prop-types';
 const CameraManager = NativeModules.ALPRCameraManager;
 const CAMERA_REF = 'camera';
 
@@ -116,3 +116,4 @@ const ALPRCamera = requireNativeComponent(
      }
    }
 );
+
